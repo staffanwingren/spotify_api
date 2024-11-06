@@ -1,0 +1,6 @@
+expand-data "q={{q}}"
+data "type=album"
+variable "%TOKEN@.token"
+expand-header "Authorization: Bearer {{TOKEN}}"
+get
+url "https://api.spotify.com/v1/search"

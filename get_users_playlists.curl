@@ -1,0 +1,4 @@
+variable "%TOKEN@.token"
+expand-header "Authorization: Bearer {{TOKEN}}"
+request GET
+url "https://api.spotify.com/v1/me/playlists"
